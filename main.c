@@ -9,8 +9,11 @@ int main(){
 
     struct User user;
 
+    printf("Digite seu nome:\n");
+    scanf("%s", &user.usuario);
 
-    printf("Hello, world\n");
+
+    printf("Ola, %s", user.usuario);
 
     return 0;
 
