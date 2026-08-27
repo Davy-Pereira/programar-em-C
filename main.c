@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 
 struct User{
     char usuario[20];
@@ -10,10 +12,16 @@ struct Login{
     char password[20];
 };
 
+
+
 int main(){
 
     struct User user;
     struct Login login;
+
+    strcpy(user.usuario, "admin");
+    strcpy(user.senha, "123");
+    
 
 
     printf("Digite seu nome:\n");
@@ -23,8 +31,12 @@ int main(){
     scanf("%s", &login.password);
 
 
-    printf("Bem vindo, %s", login.user);
-
+    if (strcmp(user.usuario, login.user) == 0 && strcmp(user.senha, login.password) == 0){
+        printf("Bem vindo, %s", login.user);
+    } else {
+        printf("Usuario ou senha incorretos");
+    }
+    
     return 0;
 
 }
