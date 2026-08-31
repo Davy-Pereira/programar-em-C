@@ -40,25 +40,78 @@
 // }
 
 
+
+// Tempo de saudação de acordo com o horário do sistema
+// #include <stdio.h>
+// #include <time.h>
+
+// int main() {
+
+//     time_t agora = time(NULL);
+//     struct tm *data = localtime(&agora);
+//     int hora = data->tm_hour;
+
+//     if (hora >= 6 && hora < 12) {
+//         printf("Bom dia!\n");
+//     } else if (hora >= 12 && hora < 18) {
+//         printf("Boa tarde!\n");
+//     } else if (hora >= 18 && hora < 24){
+//         printf("Boa noite!\n");
+//     } else {
+//         printf("Boa madrugada!\n");
+//     }
+
+
+//     return 0;
+// }
+
+
+
+// DIAS DA SEMANA
 #include <stdio.h>
-#include <time.h>
+#include <string.h>
 
-int main() {
+int main(){
 
-    time_t agora = time(NULL);
-    struct tm *data = localtime(&agora);
-    int hora = data->tm_hour;
+    int dia;
 
-    if (hora >= 6 && hora < 12) {
-        printf("Bom dia!\n");
-    } else if (hora >= 12 && hora < 18) {
-        printf("Boa tarde!\n");
-    } else if (hora >= 18 && hora < 24){
-        printf("Boa noite!\n");
-    } else {
-        printf("Boa madrugada!\n");
+    printf("Digite um numero de 1 a 7 para representar o dia da semana:\n");
+    scanf("%d", &dia);
+
+    switch(dia){
+
+        case 1:
+            printf("Domingo\n");
+            break;
+        
+        case 2:
+            printf("Segunda-feira\n");
+            break;
+        
+        case 3:
+            printf("Terça-feira\n");
+            break;
+        
+        case 4:
+            printf("Quarta-feira\n");
+            break;
+        
+        case 5:
+            printf("Quinta-feira\n");
+            break;
+        
+        case 6:
+            printf("Sexta-feira\n");
+            break;
+
+        case 7:
+            printf("Sábado\n");
+            break;
+
+        default:
+            printf("Numero invalido. Digite um numero de 1 a 7.\n");
+            break;
     }
-
 
     return 0;
 }
