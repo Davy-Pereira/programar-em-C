@@ -68,50 +68,73 @@
 
 
 // DIAS DA SEMANA
+// #include <stdio.h>
+// #include <string.h>
+
+// int main(){
+
+//     int dia;
+
+//     printf("Digite um numero de 1 a 7 para representar o dia da semana:\n");
+//     scanf("%d", &dia);
+
+//     switch(dia){
+
+//         case 1:
+//             printf("Domingo\n");
+//             break;
+        
+//         case 2:
+//             printf("Segunda-feira\n");
+//             break;
+        
+//         case 3:
+//             printf("Terça-feira\n");
+//             break;
+        
+//         case 4:
+//             printf("Quarta-feira\n");
+//             break;
+        
+//         case 5:
+//             printf("Quinta-feira\n");
+//             break;
+        
+//         case 6:
+//             printf("Sexta-feira\n");
+//             break;
+
+//         case 7:
+//             printf("Sábado\n");
+//             break;
+
+//         default:
+//             printf("Numero invalido. Digite um numero de 1 a 7.\n");
+//             break;
+//     }
+
+//     return 0;
+// }
+
+
+//LAÇO DE REPETIÇÃO
 #include <stdio.h>
 #include <string.h>
 
 int main(){
 
-    int dia;
+    int vezes = 1;
 
-    printf("Digite um numero de 1 a 7 para representar o dia da semana:\n");
-    scanf("%d", &dia);
-
-    switch(dia){
-
-        case 1:
-            printf("Domingo\n");
-            break;
-        
-        case 2:
-            printf("Segunda-feira\n");
-            break;
-        
-        case 3:
-            printf("Terça-feira\n");
-            break;
-        
-        case 4:
-            printf("Quarta-feira\n");
-            break;
-        
-        case 5:
-            printf("Quinta-feira\n");
-            break;
-        
-        case 6:
-            printf("Sexta-feira\n");
-            break;
-
-        case 7:
-            printf("Sábado\n");
-            break;
-
-        default:
-            printf("Numero invalido. Digite um numero de 1 a 7.\n");
-            break;
+    // WHILE
+    while(vezes <= 5){
+        printf("%d Davi\n", vezes);
+        vezes = vezes + 1;
     }
 
-    return 0;
+    // FOR
+    for(int i = 1; i <= 5; i++){
+        printf("%d Davi\n", i);
+    };
+
+    return 0 ;
 }
