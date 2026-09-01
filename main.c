@@ -136,5 +136,12 @@ int main(){
         printf("%d Davi\n", i);
     };
 
+    //DO WHILE
+    int cont = 1;
+    do{
+        printf("%d Davi\n", cont);
+       cont++;
+    } while(cont <= 5);
+
     return 0 ;
 }
